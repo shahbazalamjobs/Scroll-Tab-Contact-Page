@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Scroll </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="nav__left">
+                <img class="nav__logo" src="logo.png" alt="">
+            </div>
+            <div class="nav__right">
+                <ul class="nav__list">
+                    <li><a href="#sec1" class="nav__item"> Home </a></li>
+                    <li><a href="#sec2" class="nav__item"> About </a></li>
+                    <li><a href="#sec3" class="nav__item"> Services </a></li>
+                    <li><a href="#sec4" class="nav__item"> Hero </a></li>
+                    <li><a href="#sec5" class="nav__item"> Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- section -->
+        <!-- Home section -->
+        <section class="section" id="sec1">
+            <div class="home__center">
+                <h3 class="home__title">Welcome to Our Website!</h3>
+                <p class="home__text">This is the main content of our homepage.
+                </p>
+                <button class="home__btn"> Click Me </button>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="section sec2" id="sec2">
+            <div id="text__container">
+                <div id="text__content">
+                    <h2>About Us</h2>
+                    <p>Welcome to our world of Full Stack Development! We are a
+                        team of passionate and skilled developers dedicated to
+                        delivering high-quality solutions for your software
+                        needs. With expertise in both front-end and back-end
+                        technologies, we take pride in crafting robust and
+                        scalable applications tailored to your requirements.</p>
+                    <p class="p-hide">Our mission is to elevate your digital presence through
+                        innovative and efficient development practices. Whether
+                        it's building responsive user interfaces or optimizing
+                        server-side performance, we've got you covered.</p>
+                </div>
+            </div>
+            <div id="image__container">
+                <img id="company__image"
+                    src="https://images.pexels.com/photos/4974907/pexels-photo-4974907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Company Image">
+            </div>
+            </p>
+        </section>
+        <!-- Services section -->
+        <section class="section sec3" id="sec3">
+            <h1> Developer Services </h1>
+            <div class="service__container">
+                <div id="tab__container">
+                    <div class="tabs">
+                        <div class="tab-button" onclick="showTab('tab1')">
+                            Frontend
+                        </div>
+                        <div class="tab-button" onclick="showTab('tab2')">
+                            Backend
+                        </div>
+                        <div class="tab-button" onclick="showTab('tab3')">
+                            Database
+                        </div>
+                        <div class="tab-button" onclick="showTab('tab4')">
+                            Git
+                        </div>
+                        <div class="tab-button" onclick="showTab('tab5')">
+                            Devops
+                        </div>
+                    </div>
+                    <div id="tab1" class="tab__content active-tab">
+                        <h2>Frontend Development</h2>
+                        <p>Empower your applications with captivating user
+                            interfaces and seamless experiences. Our frontend
+                            development services include:</p>
+                        <ul>
+                            <li>Responsive Web Design</li>
+                            <li>UI/UX Design and Prototyping</li>
+                            <li>Single Page Applications (SPA) Development</li>
+                            <li>Integration with APIs and Third-party Services
+                            </li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                    </div>
+                    <div id="tab2" class="tab__content">
+                        <h2>Backend Development</h2>
+                        <p>Build robust server-side solutions that power the
+                            core functionality of your web applications. Our
+                            backend development services encompass:</p>
+                        <ul>
+                            <li>Server-side Programming in Node.js, Python, or
+                                Java</li>
+                            <li>Database Design and Implementation</li>
+                            <li>API Development and Integration</li>
+                            <li>Authentication and Authorization Systems</li>
+                            <li>Scalability and Performance Tuning</li>
+                        </ul>
+                    </div>
+                    <div id="tab3" class="tab__content">
+                        <h2>Database Management</h2>
+                        <p>Efficiently manage and organize your data with our
+                            database management services. Explore the following
+                            aspects:</p>
+                        <ul>
+                            <li>Relational and NoSQL Database Solutions</li>
+                            <li>Data Modeling and Indexing</li>
+                            <li>Query Optimization</li>
+                            <li>Data Migration and Transformation</li>
+                            <li>Backup and Recovery Strategies</li>
+                        </ul>
+                    </div>
+                    <div id="tab4" class="tab__content">
+                        <h2>Git Version Control</h2>
+                        <p>Master the art of collaborative development with Git.
+                            Our Git version control services cover:</p>
+                        <ul>
+                            <li>Git Repository Setup and Configuration</li>
+                            <li>Branching and Merging Strategies</li>
+                            <li>Code Review and Pull Request Workflow</li>
+                            <li>Continuous Integration with Git Hooks</li>
+                            <li>Git Flow Implementation</li>
+                        </ul>
+                    </div>
+                    <div id="tab5" class="tab__content">
+                        <h2>DevOps Practices</h2>
+                        <p>Transform your development and operations with our
+                            DevOps practices. Embrace a culture of continuous
+                            delivery and improvement through:</p>
+                        <ul>
+                            <li>Continuous Integration and Deployment (CI/CD)
+                            </li>
+                            <li>Infrastructure as Code (IaC)</li>
+                            <li>Automated Testing and Quality Assurance</li>
+                            <li>Monitoring and Logging Solutions</li>
+                            <li>Collaboration and Communication Tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section -->
+        <section class="section sec4" id="sec4">
+            <div class="hero__section">
+                <div class="hero__content">
+                    <h1> Journey with Innovation and Excellence
+                    </h1>
+                    <p> Explore boundless possibilities with us. Unleash
+                        innovation, embrace excellence. Your journey to success
+                        begins now. </p>
+                    <div class="form__group">
+                        <input type="email" class="email-input"
+                            name="email_input" placeholder="Enter your Email">
+                        <a href="#" class="cta-button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us section -->
+        <section class="section sec5" id="sec5">
+            <h2>Contact Us</h2>
+            <p>Provide contact information or a contact form here.</p>
+            <div class="contact__container">
+                <div class="contact-column contact-col-1">
+                    <h1>Let us know how we can help.</h1>
+                    <p>We're here to help and answer any question you might
+                        have. We look forward to hearing from you! Please fill
+                        out the form or use the contact information below.</p>
+                    <div class="contact-info">
+                        <p><i class="fa fa-regular fa-envelope"></i> Email:
+                            support@example.com</p>
+                        <p><i class="fa fa-phone"></i> Phone: +1 (555) 000-0000
+                        </p>
+                        <p><i class="fa fa-map-marker"></i> Mountain View,
+                            California, United States.</p>
+                    </div>
+                </div>
+                <div class="contact-column">
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="fullName">Full Name:</label>
+                            <input type="text" id="fullName" name="fullName"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company:</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="6"
+                                required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; Private Limited Company 2024. All Rights Reserved
+        </p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
